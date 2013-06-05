@@ -1,0 +1,50 @@
+<?php
+
+$server_count   = count($server_status);
+$submit_colspan = 1;
+
+?>
+<form action="index.php?action=dbList" method="POST">
+<table class="env_picker">
+	<tr>
+		<th></th>
+<?php
+
+for($i = 0; $i < count($server_status); $i++) {
+	if (!$server_status[$i]['online']) continue;
+
+	print "\t\t<th>{$server_status[$i]['name']}</th>\n";
+
+	$submit_colspan++;
+}
+
+print "\t</tr>\n";
+
+for($x = 0; $x < $server_count; $x++) {
+	if (!$server_status[$x]['online']) continue;
+
+	print "\t<tr>\n";
+	print "\t\t<th class=\"master\">{$server_status[$x]['name']}</th>\n";
+
+	for($y = 0; $y < $server_count; $y++) {
+		if (!$server_status[$y]['online']) continue;
+
+		$disabled = ($x == $y) ? "disabled=\"disabled\"" : "";
+
+		print "\t\t<td class=\"radio\">\n";
+		print "\t\t\t<input type=\"radio\" name=\"server_environments\" value=\"{$x}|{$y}\" {$disabled} />\n";
+		print "\t\t</td>\n";
+	}
+	print "\t</tr>\n";
+}
+
+?>
+	<tr>
+		<td colspan="<?php print $submit_colspan ?>" class="submit">
+			<input type="submit" name="submit" value="continue >>" />
+		</td>
+	</tr>
+</table>
+</form>
+
+

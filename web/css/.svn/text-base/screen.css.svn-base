@@ -1,0 +1,159 @@
+body, span, div, p, th, td, label
+{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size: 9pt;
+	padding: 2px;
+}
+
+a, a:hover { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+div.clear_both { clear: both; }
+
+h1.title, h2, h3,
+div#navigation_bar,
+div#filter_information
+{
+	margin: 6px 4px;
+	padding: 4px;
+}
+
+div#filter_information
+{
+	padding: 0px;
+	border: 1px solid #000;
+}
+
+div#filter_information table th
+{
+	text-align: right;
+}
+
+div.comparison_type
+{
+	border: 1px solid #000;
+	margin: 10px 0px;
+	padding: 0px;
+}
+
+div.comparison_type h2
+{
+	margin: 0px;
+	padding: 4px 6px;
+}
+
+div.comparison_type table { margin: 0px auto; }
+
+table.server_status, table.comparison { border: 1px solid #000; }
+
+table.server_status
+{
+	margin: 0px auto;
+	width: 99%;
+}
+
+table.comparison { margin-bottom: 20px; }
+
+table.server_status tr th,
+table.server_status tr td,
+table.comparison tr td
+{
+	padding: 4px;
+	margin: 0px;
+}
+
+table.comparison tr th, table.comparison tr td { padding: 4px 10px; }
+
+table.comparison tr th,
+table.comparison tr td,
+table.server_status tr th,
+table.server_status tr td,
+table.env_picker,
+table.env_picker tr th,
+table.env_picker tr td
+{
+	text-align: center;
+}
+
+span.master, span.slave
+{
+	border: 1px solid #000;
+}
+
+table.env_picker
+{
+	width: 100%;
+	margin: 0px;
+}
+
+table.env_picker tr th,
+table.env_picker tr td.select
+{
+	padding: 6px 10px;
+}
+
+table.env_picker tr td.submit { text-align: right; }
+
+div.swap_master a
+{
+	border: 1px solid #000;
+	padding: 2px 4px;
+}
+
+div.database_filtering .letters,
+div.database_filtering .list_all
+{
+	display: block;
+	float: left;
+	border: 1px solid #000;
+	padding: 2px 4px;
+	margin: 0px 4px;
+}
+
+div.swap_master a:hover,
+div.database_filtering a:hover
+{
+	text-decoration: none;
+}
+
+div.database_filtering .letters
+{
+	width: 14px;
+	text-align: center;
+}
+
+div#comparison_results
+{
+	margin-right:  284px;
+}
+
+div#statistics
+{
+	float: right;
+	width: 280px;
+}
+
+div#statistics table
+{
+	width: 100%;
+}
+
+div#selected_environments table { margin: 5px 0; }
+
+div#selected_environments table tr th,
+div#selected_environments table tr td,
+{
+	text-align: center;
+	padding: 4px;
+}
+
+pre.code
+{
+	border: 1px solid #000;
+	padding: 10px 30px;
+	margin: 0px;
+	size: 12pt;
+	line-height: 14pt;
+}
+
+

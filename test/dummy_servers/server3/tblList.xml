@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<document>
+	<databases>
+		<database>
+			<name>room_bookings</name>
+		</database>
+	</databases>
+	<tables>
+		<table>
+			<name>Booking</name>
+			<fingerprint>5898d78703effff0ff2bc71a23c1a4bb15f375e6</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+		<table>
+			<name>Room</name>
+			<fingerprint>f881e38baac6aa9aa5746f72efb1f7fee015f0c1</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+		<table>
+			<name>RoomSlot</name>
+			<fingerprint>a0c71427ad6b8e25ae8df99b364f593dd0359ded</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+		<table>
+			<name>User</name>
+			<fingerprint>51fe9028814e0fd2f4d329e892b835c96231dabf</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+	</tables>
+</document>

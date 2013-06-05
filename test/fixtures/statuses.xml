@@ -1,0 +1,13 @@
+<?xml version="1.0"?><document>
+	<statuses>
+		<status>
+			<var_name>Aborted_clients</var_name>
+			<value>0</value>
+		</status>
+		<status>
+			<var_name>Aborted_connects</var_name>
+			<value>0</value>
+		</status>
+		<status>			<var_name>Binlog_cache_disk_use</var_name>			<value>0</value>		</status>		<status>			<var_name>Binlog_cache_use</var_name>			<value>0</value>		</status>		<status>			<var_name>Bytes_received</var_name>			<value>81</value>		</status>
+	</statuses>
+</document>

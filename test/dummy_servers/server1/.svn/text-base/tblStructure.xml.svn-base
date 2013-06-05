@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<document>
+	<databases>
+		<database>
+			<name>room_bookings</name>
+		</database>
+	</databases>
+	<tables>
+		<table>
+			<name>Booking</name>
+		</table>
+	</tables>
+	<columns>
+		<column>
+			<name>id</name>
+			<type>int(9) unsigned</type>
+			<collation></collation>
+			<null>NO</null>
+			<key>PRI</key>
+			<default></default>
+			<extra>auto_increment</extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>user_id</name>
+			<type>int(9) unsigned</type>
+			<collation></collation>
+			<null>YES</null>
+			<key>MUL</key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>room_id</name>
+			<type>int(9) unsigned</type>
+			<collation></collation>
+			<null>YES</null>
+			<key>MUL</key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>date</name>
+			<type>date</type>
+			<collation></collation>
+			<null>YES</null>
+			<key></key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>start_time</name>
+			<type>time</type>
+			<collation></collation>
+			<null>YES</null>
+			<key></key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>end_time</name>
+			<type>time</type>
+			<collation></collation>
+			<null>YES</null>
+			<key></key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>created_at</name>
+			<type>datetime</type>
+			<collation></collation>
+			<null>YES</null>
+			<key></key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column>
+			<name>updated_at</name>
+			<type>datetime</type>
+			<collation></collation>
+			<null>YES</null>
+			<key></key>             
+			<default></default>                 
+			<extra></extra>                                 
+			<privileges>select,insert,update,references</privileges>    
+			<comment></comment>                                                     
+		</column>
+		<column>
+			<name>status</name>
+			<type>varchar(40)</type>
+			<collation>latin1_swedish_ci</collation>
+			<null>YES</null>
+			<key></key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+	</columns>
+	<keys>
+		<key>
+			<table>Booking</table>
+			<non_unique>0</non_unique>
+			<key_name>id</key_name>
+			<seq_in_index>1</seq_in_index>
+			<column_name>id</column_name>
+			<collation>A</collation>
+			<cardinality>0</cardinality>
+			<sub_part></sub_part>
+			<packed></packed>
+			<null></null>
+			<index_type>BTREE</index_type>
+			<comment></comment>
+		</key>
+		<key>
+			<table>Booking</table>
+			<non_unique>1</non_unique>
+			<key_name>room_id</key_name>
+			<seq_in_index>1</seq_in_index>
+			<column_name>user_id</column_name>
+			<collation>A</collation>
+			<cardinality></cardinality>
+			<sub_part></sub_part>
+			<packed></packed>
+			<null>YES</null>
+			<index_type>BTREE</index_type>
+			<comment></comment>
+		</key>
+		<key>
+			<table>Booking</table>
+			<non_unique>1</non_unique>
+			<key_name>room_id</key_name>
+			<seq_in_index>1</seq_in_index>
+			<column_name>room_id</column_name>
+			<collation>A</collation>
+			<cardinality></cardinality>
+			<sub_part></sub_part>
+			<packed></packed>
+			<null>YES</null>
+			<index_type>BTREE</index_type>
+			<comment></comment>
+		</key>
+		<key>
+			<table>Booking</table>
+			<non_unique>1</non_unique>
+			<key_name>user_id</key_name>
+			<seq_in_index>1</seq_in_index>
+			<column_name>user_id</column_name>
+			<collation>A</collation>
+			<cardinality></cardinality>
+			<sub_part></sub_part>
+			<packed></packed>
+			<null>YES</null>
+			<index_type>BTREE</index_type>
+			<comment></comment>
+		</key>
+	</keys>
+	<charset>latin1</charset>
+	<create_table_sql>CREATE TABLE `Booking` (
+		`id` int(9) unsigned NOT NULL auto_increment,
+		`user_id` int(9) unsigned default NULL,
+		`room_id` int(9) unsigned default NULL,
+		`date` date default NULL,
+		`start_time` time default NULL,
+		`end_time` time default NULL,
+		`created_at` datetime default NULL,
+		`updated_at` datetime default NULL,
+		`status` varchar(40) default NULL,
+		UNIQUE KEY `id` (`id`),
+		KEY `room_id` (`room_id`, `user_id`),
+		KEY `user_id` (`user_id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=latin1</create_table_sql>
+	<engine>MyISAM</engine>
+</document>

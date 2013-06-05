@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * Database Checker Condfiguration File
+ * ====================================
+ */
+
+$_CONFIG = array();
+
+/**
+ * Client Configuration
+ * ====================
+ *
+ * - Database connection settings for this client
+ * - IP address which are allowed to connect to this client
+ */
+$_CONFIG['db_host'] = 'localhost';
+$_CONFIG['db_user'] = 'root';
+$_CONFIG['db_pass'] = '';
+
+$_CONFIG['ip_checker_rules'] = array(
+	'local_ip_allowed'    => true,
+	'server_ip_allowed'   => true,
+	'internal_ip_allowed' => true,
+);
+
+$_CONFIG['allowed_ip_addresses'] = array(
+	// '127.0.0.1',
+);
+
+/**
+ * Sever Configuration
+ * ===================
+ *
+ * - A list of the servers that we can connect to and query database information from
+ */
+$_CONFIG['server_list'] = array(
+	'MySQL Server 1' => 'http://mysql1.example.com/',
+	'MySQL Server 2' => 'http://mysql2.example.com/',
+);
+

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<document>
+	<databases>
+		<database>
+			<name>foobar_monkey</name>
+			<fingerprint>b278a3b49648beaeed6da6dce2d9a5ef45e5143d</fingerprint>
+		</database>
+		<database>
+			<name>room_bookings</name>
+			<fingerprint>87d5a6962a28eefafa22b7f8ebf65f1be85d274c</fingerprint>
+		</database>
+	</databases>
+</document>

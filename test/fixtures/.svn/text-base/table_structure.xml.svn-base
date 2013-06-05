@@ -1,0 +1,55 @@
+<?xml version="1.0"?><document>
+	<databases>
+		<database>
+			<name>example_database</name>
+		</database>
+	</databases>
+	<tables>
+		<table>
+			<name>example_table</name>
+		</table>
+	</tables>
+	<columns>
+		<column>
+			<name>id</name>
+			<type>int(9) unsigned</type>
+			<collation></collation>
+			<null>NO</null>
+			<key>PRI</key>
+			<default></default>
+			<extra>auto_increment</extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+		<column><name>foobar</name>
+			<type>varchar(255)</type>
+			<collation>utf8_unicode_ci</collation>
+			<null>NO</null>
+			<key></key>
+			<default></default>
+			<extra></extra>
+			<privileges>select,insert,update,references</privileges>
+			<comment></comment>
+		</column>
+	</columns>
+	<keys>
+		<key>
+			<table>example_table</table>
+			<non_unique>0</non_unique>
+			<key_name>PRIMARY</key_name>
+			<seq_in_index>1</seq_in_index>
+			<column_name>id</column_name>
+			<collation>A</collation>
+			<cardinality>21</cardinality>
+			<sub_part></sub_part>
+			<packed></packed>
+			<null></null>
+			<index_type>BTREE</index_type>
+			<comment></comment>
+		</key>
+	</keys>
+	<charset>utf8</charset>
+	<create_table_sql>CREATE TABLE `example_table` (  `id` int(9) unsigned NOT NULL auto_increment,  `foobar` varchar(255) collate utf8_unicode_ci NOT NULL default ''
+  PRIMARY KEY  (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci</create_table_sql>
+	<engine>MyISAM</engine>
+</document>

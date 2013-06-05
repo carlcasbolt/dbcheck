@@ -1,0 +1,27 @@
+<?xml version="1.0"?><document>
+	<databases>
+		<database>
+			<name>example_database</name>
+		</database>
+	</databases>
+	<tables>
+		<table>
+			<name>example_table_1</name>
+			<fingerprint>5898d78703effff0ff2bc71a23c1a4bb15f375e6</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+		<table>
+			<name>example_table_2</name>
+			<fingerprint>f881e38baac6aa9aa5746f72efb1f7fee015f0c1</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+		<table>
+			<name>example_table_3</name>
+			<fingerprint>a0c71427ad6b8e25ae8df99b364f593dd0359ded</fingerprint>
+			<engine>MyISAM</engine>
+			<charset>latin1</charset>
+		</table>
+	</tables>
+</document>

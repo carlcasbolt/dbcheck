@@ -1,0 +1,80 @@
+
+DB Comparison Tool - ChangeLog
+==============================
+
+0.6 (8th June 2009)
+ - Simpletest framework added to the test directory
+ - Unit test coverage estimated at 70-80%
+ - Directory structure completely redesigned to store only the required doc_root files within /web/
+ - Server Variable comparison added
+ - BUG FIXES: Code improvements to not show errors under 'E_ALL' which is used by the unit tests
+ - UI Improvements
+   - CSS colours adjusted
+   - Filter form for database listing re-designed
+   - Main navigation redesigned to make it easier to navigate back and forth
+   - table and div padding changed
+ - BUG FIXS: JS toggle bugs fixed
+ - /web/files/ broken up into /web/css/ and /web/js/
+ - Several typo corrections made in the templates
+ - version information now found in VERSION file
+ - Several code changes have been made to accommodate unit testing
+ - Statistics information expanded to include more information
+ - Table list comparison now lists table Character Set and Engine as well as compares them
+ - Config information now handled within a Singleton class which reads the config
+   - This replaces $_CONFIG within the code
+ - require_once() statements changed to include() so that testing works
+ - ChangeLog added
+
+0.5 (7th April 2009)
+ - Un-autherised access to the tool now displays the offending IP address
+ - removed references to version 0.1 in code comments
+ - better comments added to the code
+ - comparison engine now determins if it should return comparison data
+ - comparison engine updated to use consistant return values for missing data
+ - refactor of the column comparison code to match the style used on tables and databases
+ - fingerprint comparison made consistent for all types
+ - css bug fixes added (clear:both) to correct template glitches
+ - ALTER TABLE / DATABASE only shown if needed
+ - Statistic information introduced for table list and table structure pages
+ - template cleanup occurred (header and footer removed and complete template file added)
+ - page title now defined within the controller class
+ - server_status.php syntax cleaned up
+ - JS Protype added to this project
+ - JS toggle introduced to show/hide comparison results
+ - CSS and JS files moved into a files directory within the doc_root
+ - BUG FIX: private variables renamed to $_fooBar.
+ - config.php-dist added ro explain what config information is required
+ - README and LICENSE added
+
+0.4 (18th December 2008)
+ - Comparison Engine class introduced to handle all of the comparison work
+ - Character Set and Engine information now present in the table structure XML
+ - Database Data class introduced to process information for the Comparison Engine
+ - Database fingerprints
+ - BUG FIX: filemtime() now dies quietly if it cannot read the cache file time
+ - Comparison data output code re-factored
+ - BUG FIX: Table fingerprints are generated with cleaner CREATE TABLES (AUTO_INCREMENT id removed)
+ - BUG FIX: alter SQL working for missing tables
+ - BUG FIX: fingerprint matching was wrong for table comparison
+ - ALTER SQL at the Database level introduced
+
+0.3 (16th December 2008)
+ - Templates broken up into smaller files for easier re-use
+ - CREATE TABLE SQL included in the XML output
+ - Alter table SQL added to the table structure page
+
+0.2 (November 2008)
+ - CSS added to make reading the output easier
+ - Step by step process introduced
+ - BUG FIX: comparison spelling correction
+ - Form controls improved for easier selection of data
+ - md5 fingerprints swapped for sha1
+ - 'test_%' databases are not included in the XML output
+ 
+0.1 (October 2008)
+ - Simple caching added to DbTools to improve performance
+ - Basic XML Generation for MySQL data
+ - Rough templates created to output the data
+ - Databases and Tables generate their own fingerprints.
+   - Tables generate them based upon their CREATE TABLE SQL
+   - Databases generate them by their table lists

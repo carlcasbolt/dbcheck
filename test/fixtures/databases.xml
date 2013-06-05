@@ -1,0 +1,12 @@
+<?xml version="1.0"?><document>
+	<databases>
+		<database>
+			<name>example_database_1</name>
+			<fingerprint>b278a3b49648beaeed6da6dce2d9a5ef45e5143d</fingerprint>
+		</database>
+		<database>
+			<name>example_database_2</name>
+			<fingerprint>87d5aebf66962a28eefafa22b7f85f1be85d274c</fingerprint>
+		</database>
+	</databases>
+</document>

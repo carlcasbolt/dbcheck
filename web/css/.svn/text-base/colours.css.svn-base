@@ -1,0 +1,121 @@
+body, span, div, p, th, td { color: #000; }
+body { 	background-color: #FFF; }
+a, a:hover { color: blue; }
+
+div.comparison_type
+{
+	background-color: #EEE;
+	border-color: #AAA;
+}
+
+table.server_status tr th,
+table.server_status tr td.online,
+table.server_status tr td.offline,
+table.comparison tr th,
+table.comparison tr td.present,
+table.comparison tr td.identical,
+table.comparison tr td.missing,
+table.comparison tr td.different
+{
+	color: #FFF;
+}
+
+div.comparison_type h2
+{
+	background-color: #EEE;
+	color: #000;
+}
+
+table.server_status,
+table.comparison
+{
+	background-color: #EEE;
+	border-color: #999;
+}
+
+table.server_status tr th,
+table.comparison tr th
+{
+	background-color: #999;
+}
+
+table.server_status tr td.status,
+table.comparison tr td.status,
+table.comparison tr td.status
+{
+	background-color: #CCC;
+}
+
+table.server_status tr td.online,
+table.comparison tr td.present,
+table.comparison tr td.identical
+{
+	background-color: #0B0;
+}
+
+table.server_status tr td.offline,
+table.comparison tr td.missing
+{
+	background-color: #D00;
+}
+
+table.comparison tr td.different { background-color: #F91; }
+
+table.env_picker,
+table.env_picker tr th,
+table.env_picker tr td
+{
+	background-color: #DDD;
+}
+
+div#filter_information
+{
+	background-color: #DDD;
+	border-color: #AAA;
+}
+
+div.swap_master a
+{
+	background-color: #FFB;
+	border-color: #CC4;
+}
+
+div.database_filtering .letters,
+div.database_filtering .list_all
+{
+	background-color: #FDD;
+	border-color: #C66;
+	color: #A44;
+}
+
+div.database_filtering a.letters,
+div.database_filtering a.list_all
+{
+	background-color: #DDD;
+	border-color: #999;
+	color: #444;
+}
+
+table.env_picker tr td.n_a { background-color: #AAA; }
+
+table.env_picker tr th.master, span.master { background-color: #FAA; }
+table.env_picker tr th.slave,  span.slave  { background-color: #AAF; }
+
+span.master { border-color: #FAA; }
+span.slave  { border-color: #AAF; }
+
+div#selected_environments table,
+div#selected_environments table tr th,
+div#selected_environments table tr td
+{
+	background-color: #DDD;
+}
+
+pre.code
+{
+	border-color: #022;
+	background-code: #EFF;
+}
+
+
+

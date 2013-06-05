@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<document><databases><database><name></name></database></databases><tables><table><name>foobar1</name><fingerprint>eccbc87e4b5ce2fe28308fd9f2a7baf3</fingerprint><engine>MyISAM</engine><charset>utf8</charset></table><table><name>foobar2</name><fingerprint>ce2f2a7eccbc87e4b5baf3fe28308fd9</fingerprint><engine>MyISAM</engine><charset>utf8</charset></table></tables></document>
