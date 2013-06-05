@@ -1,22 +1,22 @@
-
 DB Comparison Tool - Readme
 ===========================
 
-  A set of PHP-scripts to compare the database structure between 2 servers.
+A set of PHP-scripts to compare the database structure between 2 servers.
 
-  Version 0.6
-  -----------
+## Version 0.6
 
-  Requirements:
-    php 5.1.0 or later
-    mysql 4.x
-    a web browser
+## Requirements:
+ * php 5.1.0 or later
+ * mysql 4.x
+ * a web browser
 
-  Summary:
-   The DB Comparison Tool is intended to identify and resolve the differences which
-   can exist between 2 versions of a database when it exists on 2 seperate machines. 
+## Summary
 
-  Folder structure:
+The DB Comparison Tool is intended to identify and resolve the differences which
+can exist between 2 versions of a database when it exists on 2 seperate machines. 
+
+## Folder structure:
+```
     dbcheck/
       cache/
       config.php
@@ -73,18 +73,20 @@ DB Comparison Tool - Readme
           toggler.js
         query.php
         status.php
+```
+
+## Installation:
+
+Each database server will require it's own version of the Database Comparsion Tool
+installed on it. One of these installs (your development server is recommended) 
+will have a complete list of the other servers and the full URL to each of the
+installations. 
 
 
-  Installation:
-    Each database server will require it's own version of the Database Comparsion Tool
-    installed on it. One of these installs (your development server is recommended) 
-    will have a complete list of the other servers and the full URL to each of the
-    installations. 
 
+And just for fun...
 
-
-  And just for fun...
-
+```
 
                                 .:xxxxxxxx:. 
                              .xxxxxxxxxxxxxxxx. 
@@ -133,4 +135,4 @@ DB Comparison Tool - Readme
              '':.::::::::::'                        `._'::::::'' 
 
 
-
+```
